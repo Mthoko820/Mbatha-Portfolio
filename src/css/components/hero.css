@@ -1,0 +1,61 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: var(--hero-background);
+    color: var(--text-color);
+    padding: 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: typing 2s steps(10, end), blink-caret 0.75s step-end infinite;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.hero .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: var(--accent-hover-color);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--text-color);
+    }
+}

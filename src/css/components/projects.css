@@ -1,0 +1,61 @@
+/portfolio-website/portfolio-website/src/css/components/projects.css
+
+.project-card {
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.project-content {
+    padding: 16px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 8px 0;
+}
+
+.project-tech {
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+    margin: 4px 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--hover-accent-color);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}

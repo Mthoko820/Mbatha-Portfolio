@@ -1,0 +1,26 @@
+{
+  "name": "mthokozisi-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Professional portfolio website for Mthokozisi Mbatha - AI Engineer",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "gh-pages": "^6.1.0"
+  },
+  "keywords": [
+    "portfolio",
+    "ai-engineer",
+    "machine-learning",
+    "vite",
+    "javascript"
+  ],
+  "author": "Mthokozisi Mbatha",
+  "license": "MIT"
+}

@@ -1,0 +1,96 @@
+/* Add this to the end of your CSS file to debug the projects section */
+
+/* Debug styles for projects section */
+.projects {
+  min-height: 100vh;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.projects-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+  gap: var(--spacing-2xl) !important;
+  margin-bottom: var(--spacing-2xl) !important;
+  visibility: visible !important;
+}
+
+.project-card {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden !important;
+  min-height: 400px !important;
+}
+
+.project-content {
+  display: block !important;
+  padding: var(--spacing-xl) !important;
+}
+
+.project-title {
+  color: var(--text-primary) !important;
+  font-size: var(--font-size-xl) !important;
+  margin-bottom: var(--spacing-md) !important;
+}
+
+.project-description {
+  color: var(--text-secondary) !important;
+  margin-bottom: var(--spacing-lg) !important;
+}
+
+.project-tech {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: var(--spacing-sm) !important;
+  margin-bottom: var(--spacing-lg) !important;
+}
+
+.tech-tag {
+  background: var(--bg-tertiary) !important;
+  color: var(--primary-color) !important;
+  padding: var(--spacing-xs) var(--spacing-md) !important;
+  border-radius: var(--radius-sm) !important;
+  font-size: var(--font-size-sm) !important;
+}
+
+.project-links {
+  display: flex !important;
+  gap: var(--spacing-md) !important;
+}
+
+.project-link {
+  color: var(--text-secondary) !important;
+  font-size: var(--font-size-lg) !important;
+}
+
+.project-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Update the spotlight grid for 6 cards */
+
+@media (min-width: 1200px) {
+  .spotlight-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    gap: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .spotlight-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 767px) {
+  .spotlight-grid {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+    gap: var(--spacing-lg);
+  }
+}

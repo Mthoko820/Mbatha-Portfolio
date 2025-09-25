@@ -1,0 +1,79 @@
+/portfolio-website/portfolio-website/src/css/components/contact.css
+
+/* Contact Section Styles */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.contact p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--input-background);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.contact button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.contact .social-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.contact .social-links a {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.contact .social-links a:hover {
+    color: var(--primary-color-hover);
+}

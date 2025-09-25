@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #00ff00; /* Neon Green */
+    --secondary-color: #1e1e1e; /* Dark Background */
+    --accent-color: #007bff; /* Bright Blue */
+    --text-color: #ffffff; /* White Text */
+    --font-family: 'Poppins', sans-serif; /* Font Family */
+    --font-size-base: 16px; /* Base Font Size */
+    --font-size-lg: 1.25rem; /* Large Font Size */
+    --font-size-sm: 0.875rem; /* Small Font Size */
+    --border-radius: 8px; /* Border Radius for Buttons and Cards */
+    --transition-speed: 0.3s; /* Transition Speed for Effects */
+}

@@ -1,0 +1,47 @@
+/portfolio-website/portfolio-website/src/css/components/experience.css
+
+.experience-section {
+    padding: 2rem 1rem;
+    background-color: var(--background-color);
+}
+
+.experience-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.experience-timeline {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.experience-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.experience-date {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.experience-role {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.experience-description {
+    font-size: 1rem;
+    color: var(--text-color);
+}
